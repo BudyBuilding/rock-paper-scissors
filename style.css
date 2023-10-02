@@ -1,0 +1,81 @@
+svg {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+body {
+  background-color: #fff;
+}
+
+.main-box {
+  margin: 10rem auto;
+  width: 20rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 15px hsla(0, 0%, 18%, 0.534);
+  color: blueviolet;
+  height: 25rem;
+  position: relative;
+  font-family: "Rubik", sans-serif;
+}
+
+.top {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.title {
+  text-align: center;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  gap: 1rem;
+  border-radius: 1rem;
+  margin: 0 0.5rem 0 0;
+}
+
+.bottom div {
+  padding: 1rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.bottom div:hover {
+  box-shadow: 5px 5px 15px hsla(0, 0%, 18%, 0.534);
+}
+
+.playside {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.playside svg {
+  height: 5rem;
+  width: 5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.message,
+.points {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.disabled {
+  pointer-events: none; /* Disable pointer events, blocking interaction */
+  /* opacity: 0.5; Optionally, reduce opacity to visually indicate disabled state */
+}
